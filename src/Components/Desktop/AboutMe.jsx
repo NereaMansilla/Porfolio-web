@@ -14,7 +14,7 @@ import { FaGitAlt } from "react-icons/fa";
 export const AboutMe = () => {
   return (
     <div className=" flex justify-center items-center h-full bg-[#210D42]   " id="About">
-    <div className="h-auto w-[90vw] rounded-[50px] p-[10px] backdrop-blur-md">
+    <div className="h-auto w-[90vw] rounded-[50px] p-[10px] ">
   <h1 className="text-center font-light text-[36px] text-white p-[5px]">I’m a web developer specialized in frontend with great passion for technology. I’ve worked in several projects as freelancer, occupyng trainee and junior roles. </h1>
  <h1 className="text-center font-light text-[36px] text-white p-[5px]">Some of my skills:</h1>
  <br/>
