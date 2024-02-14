@@ -10,7 +10,7 @@ export const HomeResponsive = () => {
   
     <div className="md:hidden bg-[#210D42] h-auto">
     <HeaderResponsive/>
-    <MenuResponsive/>
+   {/*  <MenuResponsive/> */}
     <AboutMeResponsive/>
     <WorkResponsive/>
     <ProjectsResponsive/> 

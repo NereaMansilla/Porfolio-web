@@ -1,4 +1,4 @@
-import { DiVisualstudio } from "react-icons/di";
+/*  import { DiVisualstudio } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
@@ -9,14 +9,105 @@ import { SiSequelize } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaWordpress } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa"; */
 
+import React, {useTransition,UseState, useState} from "react"; 
+import { TabButtonResponsive } from "./TabButtonResponsive";
+
+
+
+const TAB_DATA =[
+  {
+    title:"skills",
+    id:"skills",
+    content: (
+      <ul className="grid grid-cols-4 grid-rows-3 items-center justify-around w-full mt-[10px]">
+        <li>Javascript</li>
+        <li>Node.js</li>
+        <li>PHP</li>
+        <li>PostgreSQL</li>
+
+        <li>React</li>
+        <li>Express</li>
+        <li>Wordpress</li>
+        <li>Git</li>
+
+       
+        <li>Figma</li>
+        <li>Sequelize</li>
+        <li>Mysql</li>
+        <li>Powershell</li>
+      </ul>
+    )
+  },
+  {
+
+    title:"education",
+    id:"education",
+    content:(
+      <ul className="mt-[10px]">
+        <li>Licenciatura en ciencias de la computación (UBA)</li>
+      </ul>
+    )
+  }
+]
 export const AboutMeResponsive = () => {
-  //  bg-[#0C0811]/[.3]  rounded-[50px] p-[10px] 
+  const [tab,setTab] = useState("skills");
+  console.log('tab', tab)
+  const [isPending,startTransition] = useTransition();
+
+
+  const handleTabChange = (id) =>{
+    startTransition(()=>{
+      setTab(id);
+    })
+  }
   return (
-    <div className=" flex justify-center items-center h-full  bg-[#210D42] pt-[20%]   " id="About">
+    <div className=" flex justify-center items-center h-full w-full  bg-[#210D42] pt-[20%]  text-white " id="About">
    <div className="h-auto w-[90vw]">
  <h1 className="text-center font-light text-2xl text-white p-[5px]">I’m a web developer specialized in frontend with great passion for technology. I’ve worked in several projects as freelancer, occupyng trainee and junior roles. </h1>
+
+
+
+
+  <TabButtonResponsive 
+  selectTab={()=>handleTabChange("skills")}
+   active={tab === "skills"}>
+    {" "}
+    Skills{" "} 
+   </TabButtonResponsive>
+ 
+
+  <TabButtonResponsive 
+  selectTab={()=>handleTabChange("education")}
+   active={tab === "education"}>
+    {" "}
+    Education{" "} 
+   </TabButtonResponsive>
+  
+  <div className="">
+  
+    {TAB_DATA.find((t)=> t.id === tab).content}
+
+  </div>
+
+  
+
+
+   
+   </div>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+/* 
 <h1 className="text-center font-light text-2xl text-white p-[5px]">Some of my skills:</h1>
 <br/>
  <div className="flex flex-row justify-around items-center">
@@ -53,10 +144,4 @@ export const AboutMeResponsive = () => {
     <h3 className="text-white  text-[10px] sm:text-[15px]">Sequelize</h3>
     <h3 className="text-white text-[10px]  sm:text-[15px] ">Powershell</h3>
     <h3 className="text-white  text-[10px] sm:text-[15px]  pr-[20px]">Git</h3>
-</div> 
-
-
-   </div>
-    </div>
-  )
-}
+</div>  */
