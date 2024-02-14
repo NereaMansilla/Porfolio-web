@@ -1,10 +1,9 @@
  import { HomeResponsive } from './Components/Responsive/HomeResponsive'
-import { Home } from './Components/Desktop/Home' 
+/* import { Home } from './Components/Desktop/Home'  */
 import { PFresponsive } from './Components/Responsive/PFresponsive'
 import { Routes, Route } from "react-router-dom"
 import { DDresponsive } from './Components/Responsive/DDresponsive'
- import { PF } from './Components/Desktop/PF'
- import {DD} from './Components/Desktop/DD'
+
 
 
 
@@ -25,14 +24,14 @@ function App() {
       </Routes> 
 </div>
 
-<div className='md:block'>
+{/* <div className='md:block'>
 
   <Routes>
       <Route  path="/" element={ <Home /> } />  
       <Route exact path="PF" element={ <PF/> } /> 
       <Route exact path="DD" element={ <DD/> } />
       </Routes> 
-</div>
+</div> */}
     </>
   )
 }

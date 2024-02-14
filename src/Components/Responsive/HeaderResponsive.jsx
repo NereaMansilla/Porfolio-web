@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { TypeAnimation } from 'react-type-animation';
+import CV from '../../img/NereaMansillaBarreiroCV.pdf'
 
 
 
@@ -12,17 +13,15 @@ import { TypeAnimation } from 'react-type-animation';
 
 export const HeaderResponsive = () => {
   return (
-    <div className="flex justify-center items-center flex-col text-white font-bold text-4xl" id="Home">
-        <br/>
-        <br/>
-        <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-[#8343AA]">Hello, i'm </h1>
-   
-        
+    <div className="flex justify-center items-center flex-col md:hidden text-white font-bold text-5xl" id="Home">
+      
+      <div className="flex justify-center flex-col items-center flex-wrap text-white font-bold text-5xl pt-8">
+      <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-[#8343AA]">Hello, i'm {" "} </h1>
         <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
+      
         'Nerea',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        1000, 
         'Web developer',
         1000,
       
@@ -32,6 +31,7 @@ export const HeaderResponsive = () => {
     
       repeat={Infinity}
     />
+      </div>
 
 
       <br/>
@@ -52,13 +52,16 @@ export const HeaderResponsive = () => {
       
        
       
-        
-        <button className="text-white text-2xl border-[1px] font-extralight italic p-4 rounded-full bg-transparent border-white">Download CV</button>
+        <a href={CV} download>
+        <button className="text-white text-2xl border-4 border-[#5f00be] font-extralight italic p-4 rounded-full bg-transparent ">Download CV</button>
+        </a>
         
         <br/>
         <br/>
        
         <img src={avatar} className="h-[300px] w-[300px] text-center" alt="avatar" />
+
+        
 
        
          

@@ -11,7 +11,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { FaWordpress } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa"; */
 
-import React, {useTransition,UseState, useState} from "react"; 
+import {useTransition, useState} from "react"; 
 import { TabButtonResponsive } from "./TabButtonResponsive";
 
 
@@ -21,7 +21,7 @@ const TAB_DATA =[
     title:"skills",
     id:"skills",
     content: (
-      <ul className="grid grid-cols-4 grid-rows-3 items-center justify-around w-full mt-[10px]">
+      <ul className="grid grid-cols-4 grid-rows-3 items-center justify-around w-full mt-[10px] lg:text-xl">
         <li>Javascript</li>
         <li>Node.js</li>
         <li>PHP</li>
@@ -45,8 +45,8 @@ const TAB_DATA =[
     title:"education",
     id:"education",
     content:(
-      <ul className="mt-[10px]">
-        <li>Licenciatura en ciencias de la computación (UBA)</li>
+      <ul className="mt-[10px] lg:text-xl">
+        <li>Computer Science Bachelor's Degree at University of Buenos Aires </li>
       </ul>
     )
   }
@@ -63,11 +63,11 @@ export const AboutMeResponsive = () => {
     })
   }
   return (
-    <div className=" flex justify-center items-center h-full w-full  bg-[#210D42] pt-[20%]  text-white " id="About">
+    <div className=" flex justify-center items-center h-full w-full  bg-[#1f1431] pt-[20%]  text-white " id="About">
    <div className="h-auto w-[90vw]">
- <h1 className="text-center font-light text-2xl text-white p-[5px]">I’m a web developer specialized in frontend with great passion for technology. I’ve worked in several projects as freelancer, occupyng trainee and junior roles. </h1>
-
-
+      <h1 className=" text-center font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-[#8343AA]">About me</h1>
+ <h1 className="text-center font-light text-2xl text-white p-[5px] lg:text-3xl">I’m a web developer specialized in frontend with great passion for technology. I’ve worked in several projects as freelancer, occupyng trainee and junior roles. </h1>
+ 
 
 
   <TabButtonResponsive 

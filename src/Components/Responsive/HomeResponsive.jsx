@@ -1,19 +1,24 @@
 
 import { HeaderResponsive } from "./HeaderResponsive";
-import { MenuResponsive } from "./MenuResponsive";
+import { HeaderDesktop } from "./HeaderDesktop";
 import { AboutMeResponsive } from "./AboutMeResponsive";
 import { WorkResponsive } from "./WorkResponsive";
 import { ProjectsResponsive } from "./ProjectsResponsive";
+/* import {MenuResponsive} from "./MenuResponsive" */
+import { Menu } from "./Menu";
 
 export const HomeResponsive = () => {
   return (
   
-    <div className="md:hidden bg-[#210D42] h-auto">
+    <div className=" bg-[#1f1431] h-auto">
+      <Menu/>
+       
     <HeaderResponsive/>
-   {/*  <MenuResponsive/> */}
+    <HeaderDesktop/>
     <AboutMeResponsive/>
     <WorkResponsive/>
     <ProjectsResponsive/> 
+  
     </div>
   )
 }

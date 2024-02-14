@@ -7,7 +7,7 @@ import {Link} from 'react-scroll'
 export const Menu = () => {
   return (
   
-            <nav className="w-full h-16 bg-[#17042B] flex items-center  flex-row shadow-lg fixed z-[999]">
+            <nav className="w-full h-16 bg-[#17042B] md:flex items-center  flex-row shadow-lg fixed z-[999] hidden">
 
             <ul className="flex flex-row" >
               <Link 
@@ -31,13 +31,13 @@ export const Menu = () => {
              <li className="text-white text-lg  cursor-pointer ">Work</li>
               </Link>
 
-              <Link
+            {/*   <Link
                to="Projects"
                spy={true}
                smooth={true}>
               
                 <li className="text-white text-lg  cursor-pointer pl-7">Projects</li>
-              </Link>
+              </Link> */}
             </ul>
 
 

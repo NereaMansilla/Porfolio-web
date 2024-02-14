@@ -11,10 +11,10 @@ export const ProjectsResponsive = () => {
 
 
   return (
-    <section className=" text-black  bg-[#210D42]" id="Projects">
+    <section className=" text-black  bg-[#210D42] relative  " id="Projects">
         
 
-    
+
 
  
 
