@@ -1,6 +1,6 @@
 import PF from '../../img/pfLogo.png'
 import { MdRemoveRedEye } from "react-icons/md";
-/*  import PFinicio from '../../img/.PFinicio.png'   */
+ import PFinicio from '../../img/PFinicio.png'  
 import PFCard from '../../img/PFCard.png'
 import PFsearchbar from '../../img/PFsearchbar.png'
 import PFControlPanel from '../../img/PFControlPanel.png'
