@@ -12,7 +12,7 @@ import { FaWordpress } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa"; */
 
 import {useTransition, useState} from "react"; 
-import { TabButtonResponsive } from "./TabButtonResponsive";
+import { TabButton} from "./TabButton";
 
 
 
@@ -51,7 +51,7 @@ const TAB_DATA =[
     )
   }
 ]
-export const AboutMeResponsive = () => {
+export const AboutMe = () => {
   const [tab,setTab] = useState("skills");
   console.log('tab', tab)
   const [isPending,startTransition] = useTransition();
@@ -70,20 +70,20 @@ export const AboutMeResponsive = () => {
  
 
 
-  <TabButtonResponsive 
+  <TabButton 
   selectTab={()=>handleTabChange("skills")}
    active={tab === "skills"}>
     {" "}
     Skills{" "} 
-   </TabButtonResponsive>
+   </TabButton>
  
 
-  <TabButtonResponsive 
+  <TabButton 
   selectTab={()=>handleTabChange("education")}
    active={tab === "education"}>
     {" "}
     Education{" "} 
-   </TabButtonResponsive>
+   </TabButton>
   
   <div className="">
   

@@ -1,8 +1,8 @@
- import { HomeResponsive } from './Components/Responsive/HomeResponsive'
+import {Home} from "./Components/Home"
 /* import { Home } from './Components/Desktop/Home'  */
-import { PFresponsive } from './Components/Responsive/PFresponsive'
+import { PF } from './Components/PF'
 import { Routes, Route } from "react-router-dom"
-import { DDresponsive } from './Components/Responsive/DDresponsive'
+import { DD } from './Components/DD'
 
 
 
@@ -18,9 +18,9 @@ function App() {
 <div>
 
   <Routes>
-      <Route  path="/" element={ <HomeResponsive /> } />  
-      <Route exact path="PF" element={ <PFresponsive /> } />
-      <Route exact path="DD" element={ <DDresponsive /> } />
+      <Route  path="/" element={ <Home /> } />  
+      <Route exact path="PF" element={ <PF /> } />
+      <Route exact path="DD" element={ <DD /> } />
       </Routes> 
 </div>
 

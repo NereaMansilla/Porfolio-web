@@ -1,10 +1,11 @@
 
-import PFlogo from '../../img/pfLogo.png'
-import DD from '../../img/DD.png'
+import PFlogo from '../img/pfLogo.png'
+import DD from '../img/DD.png'
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
-export const WorkResponsive = () => {
+export const Work = () => {
   return (
     <div className='bg-[#1f1431] pt-[100px] h-auto'>
     

@@ -1,17 +1,17 @@
 
-import avatar from '../../img/avatar.png'
+import avatar from '../img/avatar.png'
 /* import { Link } from 'react-router-dom' */
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { TypeAnimation } from 'react-type-animation';
-import CV from '../../img/NereaMansillaBarreiroCV.pdf'
+import CV from '../img/NereaMansillaBarreiroCV.pdf'
 
 
 
   
 
-export const HeaderResponsive = () => {
+export const Header = () => {
   return (
     <div className="flex justify-center items-center flex-col md:hidden text-white font-bold text-5xl" id="Home">
       
@@ -53,7 +53,7 @@ export const HeaderResponsive = () => {
        
       
         <a href={CV} download>
-        <button className="text-white text-2xl border-4 border-[#5f00be] font-extralight italic p-4 rounded-full bg-transparent ">Download CV</button>
+        <button className="text-white text-2xl border-2 border-white  font-extralight italic p-4 rounded-full bg-transparent ">Download CV</button>
         </a>
         
         <br/>
