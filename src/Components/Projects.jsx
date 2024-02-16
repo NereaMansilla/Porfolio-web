@@ -24,31 +24,31 @@ export const Projects= () => {
     <Swiper
       direction={'vertical'}
       slidesPerView={1}
-       /* spaceBetween={30}  */
+        spaceBetween={30}  
       mousewheel={true}
       pagination={{
         clickable: true,
       }}
       modules={[Mousewheel, Pagination]}
-      className="bg-[#fff] h-[40vh] w-[90vw] rounded-md shadow-lg "
+      className="h-[40vh] w-[90vw] md:h-[60vh] md:w-[80vw] lg:w-[70vw]  xl:w-[60vw] rounded-md shadow-lg  "
     >
        {ProjectsJSON.map((p)=>(
    <SwiperSlide key={p.id}>
 
 
-     <img className="h-[40vh] w-[90vw] relative blur-[1px]" src={p.img} alt={p.title} />
-      <div className=" text-white absolute px-8 z-[100] bg-[#00000091] rounded-md w-[90vw] h-[40vh] flex justify-center flex-col items-center text-center left-0 top-0  ">
-        <h1 className="text-xl font-bold "> {p.title} </h1>
-        <span>{p.content}</span>
+     <img className="h-[40vh] w-[90vw] md:h-[60vh] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] relative blur-[1px] rounded-md object-cover" src={p.img} alt={p.title} />
+      <div className=" text-white absolute px-8 z-[100] bg-[#00000091] rounded-md w-[90vw] h-[40vh] md:h-[60vh] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] flex justify-center flex-col items-center text-center left-0 top-0  ">
+        <h1 className="text-xl font-bold md:text-2xl "> {p.title} </h1>
+        <span className="md:text-xl">{p.content}</span>
         <br/>
-         <span className="text-sm font-thin">{p.technologies}</span>
+         <span className="text-sm font-thin md:text-md">{p.technologies}</span>
 
         <div className="w-[90vw] flex justify-center items-center">
           <a href={p.website}>
-        <button className="text-md border-b border-[#fff] mt-8 hover:text-[#ADB7BE] hover:border-b-[#ADB7BE]">Website</button>
+        <button className="text-md border-b border-[#fff] mt-8 hover:text-[#ADB7BE] hover:border-b-[#ADB7BE] md:text-lg">Website</button>
          </a>
          <a href={p.github}>
-        <button className="text-md border-b border-[#fff] mt-8 ml-4 hover:text-[#ADB7BE] hover:border-b-[#ADB7BE]">Github</button>
+        <button className="text-md border-b border-[#fff] mt-8 ml-4 hover:text-[#ADB7BE] hover:border-b-[#ADB7BE] md:text-lg">Github</button>
          </a>
 
         </div>
