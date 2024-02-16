@@ -1,5 +1,5 @@
-import starwars from "../src/img/StarWars.png"
-import notedo from "../src/img/NoteDo.png"
+import starwars from "../src/img/Starwars.png"
+import notedo from "../src/img/Notedo.png"
 import books from "../src/img/SitioWeb.png"
 
 
