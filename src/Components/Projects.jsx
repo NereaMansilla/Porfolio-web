@@ -17,34 +17,48 @@ import { Mousewheel, Pagination } from 'swiper/modules';
 export const Projects= () => {
  
   return (
-    <section className="h-full pb-20">
+    <section className="h-full pb-24">
+         <h1 className=" text-center font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-[#8343AA]">Projects</h1>
+         <br/>
+         <br/>
     <Swiper
       direction={'vertical'}
       slidesPerView={1}
-      /* spaceBetween={30} */
+       /* spaceBetween={30}  */
       mousewheel={true}
       pagination={{
         clickable: true,
       }}
       modules={[Mousewheel, Pagination]}
-      className="bg-[#fff] h-[30vh] w-[80vw]"
+      className="bg-[#fff] h-[40vh] w-[90vw] rounded-md shadow-lg "
     >
        {ProjectsJSON.map((p)=>(
    <SwiperSlide key={p.id}>
+
+
+     <img className="h-[40vh] w-[90vw] relative blur-[1px]" src={p.img} alt={p.title} />
+      <div className=" text-white absolute px-8 z-[100] bg-[#00000091] rounded-md w-[90vw] h-[40vh] flex justify-center flex-col items-center text-center left-0 top-0  ">
+        <h1 className="text-xl font-bold "> {p.title} </h1>
+        <span>{p.content}</span>
+        <br/>
+         <span className="text-sm font-thin">{p.technologies}</span>
+
+        <div className="w-[90vw] flex justify-center items-center">
+          <a href={p.website}>
+        <button className="text-md border-b border-[#fff] mt-8 hover:text-[#ADB7BE] hover:border-b-[#ADB7BE]">Website</button>
+         </a>
+         <a href={p.github}>
+        <button className="text-md border-b border-[#fff] mt-8 ml-4 hover:text-[#ADB7BE] hover:border-b-[#ADB7BE]">Github</button>
+         </a>
+
+        </div>
+        </div> 
      
-     <img src={p.img} alt={p.title} />
 
    </SwiperSlide>
     
   ))}
-    {/*   <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
-      <SwiperSlide>Slide 6</SwiperSlide>
-      <SwiperSlide>Slide 7</SwiperSlide>
-      <SwiperSlide>Slide 8</SwiperSlide>
-      <SwiperSlide>Slide 9</SwiperSlide> */}
+
     </Swiper>
     
   {/*  {ProjectsJSON.map((p)=>(
