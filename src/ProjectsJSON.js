@@ -1,6 +1,9 @@
 import starwars from "../src/img/Starwars.png"
 import notedo from "../src/img/Notedo.png"
-import books from "../src/img/SitioWeb.png"
+import books from "../src/img/Sitioweb.png" 
+/* import Starwars from "../src/imgStarwars.png";
+import Notedo from "../src/Notedo.png";
+import SitioWeb from "../src/Sitioweb.png" */
 
 
 export const ProjectsJSON = [
