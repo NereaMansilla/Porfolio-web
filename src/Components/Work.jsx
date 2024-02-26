@@ -18,7 +18,7 @@ export const Work = () => {
        
 <div className='bg-[#52288250] shadow-xl p-2 w-[250px] h-[400px] rounded-lg flex flex-col justify-center items-center border-b-2 m-6 lg:mr-20 border-[#6600cc] lg:w-[300px] lg:h-[450px] lg:text-lg '>
   <img src={PFlogo} className='' alt="" />
-  <h1 className='text-white font-thin text-lg text-center'>Journalistic blog where i dedicated myself to developing ans capturing the frontend from layout prototypes</h1>
+  <h1 className='text-white font-thin text-lg text-center'>Journalistic blog where i dedicated myself to developing and capturing the frontend from layout prototypes</h1>
   <Link to="PF">
   <button className='flex justify-between items-center text-white font-light border-b border-[#fff]'>see more</button>
   </Link>
