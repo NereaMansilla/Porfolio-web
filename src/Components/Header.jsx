@@ -13,7 +13,7 @@ import CV from '../img/NereaMansillaBarreiroCV.pdf'
 
 export const Header = () => {
   return (
-    <div className="flex justify-center items-center flex-col md:hidden text-white font-bold text-5xl" id="Home">
+    <div className="bg-[#1f1431] flex justify-center items-center flex-col md:hidden text-white font-bold text-5xl" id="Home">
       
       <div className="flex justify-center flex-col items-center flex-wrap text-white font-bold text-5xl pt-8">
       <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-[#8343AA]">Hello, i'm {" "} </h1>

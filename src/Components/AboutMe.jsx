@@ -13,6 +13,7 @@ import { FaGitAlt } from "react-icons/fa"; */
 
 import {useTransition, useState} from "react"; 
 import { TabButton} from "./TabButton";
+import avatar from '../img/wave.svg'
 
 
 
@@ -53,7 +54,7 @@ const TAB_DATA =[
 ]
 export const AboutMe = () => {
   const [tab,setTab] = useState("skills");
-  console.log('tab', tab)
+
   const [isPending,startTransition] = useTransition();
 
 
@@ -63,10 +64,12 @@ export const AboutMe = () => {
     })
   }
   return (
-    <div className=" flex justify-center items-center h-full w-full  bg-[#1f1431] pt-[20%]  text-white " id="About">
+    <div>
+
+    <div className=" flex justify-center items-center lg:h-[60vh] w-full    text-white " id="About">
    <div className="h-auto w-[90vw]">
       <h1 className=" text-center font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-[#8343AA]">About me</h1>
- <h1 className="text-center font-light text-2xl text-white p-[5px] lg:text-3xl">I’m a web developer specialized in frontend with great passion for technology. I’ve worked in several projects as freelancer, occupying trainee and junior roles. </h1>
+ <h1 className="text-center font-light text-2xl text-white p-[5px] lg:text-3xl">I am a web developer specialized in frontend with a great passion for technology. I have worked on several projects both as a freelancer and in an employee relationship, occupying junior and junior advanced roles.</h1>
  
 
 
@@ -96,6 +99,11 @@ export const AboutMe = () => {
 
    
    </div>
+    </div>
+{/*     <div className="bg w-full">
+
+   <img src={avatar} />
+</div> */}
     </div>
   )
 }

@@ -11,7 +11,7 @@ import CV from '../img/NereaMansillaBarreiroCV.pdf'
 
 export const HeaderDesktop= () => {
     return (
-      <div className="md:flex justify-evenly items-center  hidden text-white font-bold text-5xl pt-40 lg:text-6xl" id="Home">
+      <div className=" bg-[#1f1431] md:flex justify-evenly items-center  hidden text-white font-bold text-5xl pt-40 lg:text-6xl" id="Home">
         
         <div className='flex flex-col justify-center items-center  w-[50vw]'>
 

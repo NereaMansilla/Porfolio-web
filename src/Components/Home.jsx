@@ -10,13 +10,13 @@ import { Menu } from "./Menu";
 export const Home = () => {
   return (
   
-    <div className=" bg-[#1f1431] h-auto">
+    <div className="bg-[#1f1431]  h-auto">
       <Menu/>
     <Header/>
     <HeaderDesktop/>
     <AboutMe/>
     <Work/>
-    <Projects/> 
+    <Projects/>  
   
     </div>
   )
